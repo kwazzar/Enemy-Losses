@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "88e0454ab2cae91a2e08b15751b4ede1fe88892684442e7671241faf601d27d7"
+build_start_time: [1692883936, 224436998]
+build_end_time: [1692883936, 285426139]
+inputs:
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/AppDelegate.swift": !private [1692883173, 594403266]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/SceneDelegate.swift": !private [1692883173, 601692676]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/ViewController.swift": !private [1692883173, 604615688]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/russiaLossesEquipment.swift": !private [1692883931, 812744379]
