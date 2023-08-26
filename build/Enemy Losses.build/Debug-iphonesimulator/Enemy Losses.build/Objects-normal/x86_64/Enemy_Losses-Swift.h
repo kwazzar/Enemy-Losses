@@ -274,11 +274,21 @@ SWIFT_CLASS("_TtC12Enemy_Losses18CollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC12Enemy_Losses6InfoVC")
+@interface InfoVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UICollectionView;
 @class NSIndexPath;
 @class UICollectionViewLayout;
-@class NSString;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC12Enemy_Losses16MainCollectionVC")
 @interface MainCollectionVC : UICollectionViewController
@@ -303,6 +313,15 @@ SWIFT_CLASS("_TtC12Enemy_Losses13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12Enemy_Losses13TableViewCell")
+@interface TableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

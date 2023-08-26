@@ -1,12 +1,15 @@
 version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
 options: "88e0454ab2cae91a2e08b15751b4ede1fe88892684442e7671241faf601d27d7"
-build_start_time: [1692979920, 342577934]
-build_end_time: [1692979921, 596962928]
+build_start_time: [1693088133, 367149829]
+build_end_time: [1693088134, 173850059]
 inputs:
   "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/AppDelegate.swift": [1692883173, 594403266]
   "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/CollectionViewCell.swift": [1692978608, 151928424]
-  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesEquipment.swift": [1692884909, 646198749]
-  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesEquipmentOryx.swift": [1692975866, 74472904]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/InfoVC.swift": [1693088131, 198020458]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesEquipment.swift": [1693087013, 367753982]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesEquipmentOryx.swift": [1693005634, 550478458]
   "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesPersonal.swift": [1692975866, 128156185]
-  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/MainCollectionVC.swift": [1692979920, 157035350]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/MainCollectionVC.swift": [1693087885, 549323558]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/NetworkManager.swift": [1693085635, 400400876]
   "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/SceneDelegate.swift": [1692883173, 601692676]
+  "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/TableViewCell.swift": [1693088129, 408960342]

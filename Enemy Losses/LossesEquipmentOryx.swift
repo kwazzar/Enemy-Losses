@@ -14,4 +14,7 @@ struct LossesEquipmentOryx: Decodable {
     let manufacturer: String?
     let lossesTotal: Int?
     let equipmentUa: String?
+    
+    
+
 }

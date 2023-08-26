@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,10 +40,10 @@
                                 </view>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="TAL-A8-Zgh" secondAttribute="bottom" id="4w0-Hg-nJI"/>
-                                    <constraint firstItem="TAL-A8-Zgh" firstAttribute="top" secondItem="Jtc-88-06O" secondAttribute="topMargin" id="H5D-Lh-Yzf"/>
-                                    <constraint firstItem="TAL-A8-Zgh" firstAttribute="leading" secondItem="Jtc-88-06O" secondAttribute="leadingMargin" id="IPS-75-tuX"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="TAL-A8-Zgh" secondAttribute="trailing" id="ROq-qi-w6K"/>
+                                    <constraint firstItem="TAL-A8-Zgh" firstAttribute="top" secondItem="Jtc-88-06O" secondAttribute="top" id="9Ni-6Q-Fhj"/>
+                                    <constraint firstAttribute="bottom" secondItem="TAL-A8-Zgh" secondAttribute="bottom" id="IbS-nx-ivc"/>
+                                    <constraint firstItem="TAL-A8-Zgh" firstAttribute="leading" secondItem="Jtc-88-06O" secondAttribute="leading" id="flC-uD-osh"/>
+                                    <constraint firstAttribute="trailing" secondItem="TAL-A8-Zgh" secondAttribute="trailing" id="vO8-lf-L8x"/>
                                 </constraints>
                                 <size key="customSize" width="370" height="128"/>
                                 <userDefinedRuntimeAttributes>
@@ -61,10 +62,54 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Enemy Losses" id="GKr-xQ-IE1"/>
+                    <connections>
+                        <segue destination="BCb-4w-YO9" kind="show" identifier="LossesEquipment" id="hJY-qE-byr"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K08-ot-1P7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1827.6923076923076" y="-2.1327014218009479"/>
+        </scene>
+        <!--InfoVC-->
+        <scene sceneID="DzA-TO-agd">
+            <objects>
+                <viewController id="BCb-4w-YO9" customClass="InfoVC" customModule="Enemy_Losses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y17-KW-vca">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uRw-FX-2by">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pWg-1c-riN" customClass="TableViewCell" customModule="Enemy_Losses" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pWg-1c-riN" id="grD-4p-ZKM">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YeU-zr-dmG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uRw-FX-2by" firstAttribute="top" secondItem="y17-KW-vca" secondAttribute="top" id="Wi6-2G-7uU"/>
+                            <constraint firstItem="uRw-FX-2by" firstAttribute="leading" secondItem="YeU-zr-dmG" secondAttribute="leading" id="bu5-dh-Rr3"/>
+                            <constraint firstAttribute="bottom" secondItem="uRw-FX-2by" secondAttribute="bottom" id="hjM-nV-26I"/>
+                            <constraint firstItem="uRw-FX-2by" firstAttribute="trailing" secondItem="YeU-zr-dmG" secondAttribute="trailing" id="pS3-dK-mVe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G3h-pr-s7e"/>
+                    <connections>
+                        <outlet property="tableView" destination="uRw-FX-2by" id="eFU-bV-y0U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSH-Fe-c76" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2811" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SiF-2R-vLK">

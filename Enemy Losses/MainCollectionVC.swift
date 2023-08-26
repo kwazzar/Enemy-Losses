@@ -15,7 +15,10 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
+
 class MainCollectionVC: UICollectionViewController {
+    
+    private var infos = [LossesEquipment]()
     
     let actions = Actions.allCases
 
@@ -43,7 +46,7 @@ class MainCollectionVC: UICollectionViewController {
         
         switch action {
         case .LossesEquipment:
-            print("LossesEquipment")
+            performSegue(withIdentifier: "LossesEquipment", sender: self)
         case .LossesEquipmentOryx:
             print("LossesEquipmentOryx")
         case.LossesPersonal:
