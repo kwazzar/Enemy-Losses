@@ -1,0 +1,45 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "be7028540556183cc3f1b008ecabf69df98556756fe1c0555954cc36fc586039"
+    }
+  ],
+  "containerPath" : "/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/kwazar/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/kwazar/Library/Developer/Xcode/DerivedData/Enemy_Losses-bigvgicadenucmbsvgxhssdbwolv/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/kwazar/Library/Developer/Xcode/DerivedData/Enemy_Losses-bigvgicadenucmbsvgxhssdbwolv/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

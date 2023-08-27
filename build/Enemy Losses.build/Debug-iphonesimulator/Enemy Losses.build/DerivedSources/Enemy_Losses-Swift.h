@@ -280,16 +280,28 @@ SWIFT_CLASS("_TtC12Enemy_Losses18CollectionViewCell")
 @class NSString;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC12Enemy_Losses6InfoVC")
-@interface InfoVC : UIViewController
+SWIFT_CLASS("_TtC12Enemy_Losses14LossesEqInfoVC")
+@interface LossesEqInfoVC : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
 @class NSIndexPath;
+
+@interface LossesEqInfoVC (SWIFT_EXTENSION(Enemy_Losses)) <UITableViewDelegate>
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UITableViewCell;
+
+@interface LossesEqInfoVC (SWIFT_EXTENSION(Enemy_Losses)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UICollectionView;
 @class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC12Enemy_Losses16MainCollectionVC")
@@ -320,6 +332,24 @@ SWIFT_CLASS("_TtC12Enemy_Losses13SceneDelegate")
 
 SWIFT_CLASS("_TtC12Enemy_Losses13TableViewCell")
 @interface TableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified date;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified day;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified aircraft;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified helicopter;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tank;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified apc;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fieldArlilery;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified mrl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified militaryAuto;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fuelTank;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified drone;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified navalShip;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified antiAircraftWarfare;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified specialEquipment;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified mobileSRBMSystem;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified greatestLossesDirection;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified vehiclesAndFuelTanks;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cruiseMisslies;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);

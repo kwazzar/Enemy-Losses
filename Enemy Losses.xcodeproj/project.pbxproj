@@ -18,7 +18,7 @@
 		E3484A322A97972D007E6144 /* LossesEquipmentOryx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3484A312A97972D007E6144 /* LossesEquipmentOryx.swift */; };
 		E3484A342A9798E1007E6144 /* LossesPersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3484A332A9798E1007E6144 /* LossesPersonal.swift */; };
 		E384D9582A99604600807222 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384D9572A99604600807222 /* NetworkManager.swift */; };
-		E384D95A2A997C8F00807222 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384D9592A997C8F00807222 /* InfoVC.swift */; };
+		E384D95A2A997C8F00807222 /* LossesEqInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */; };
 		E3FA56712A9AB10100FE5080 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA56702A9AB10100FE5080 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		E3484A312A97972D007E6144 /* LossesEquipmentOryx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesEquipmentOryx.swift; sourceTree = "<group>"; };
 		E3484A332A9798E1007E6144 /* LossesPersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesPersonal.swift; sourceTree = "<group>"; };
 		E384D9572A99604600807222 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		E384D9592A997C8F00807222 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesEqInfoVC.swift; sourceTree = "<group>"; };
 		E3FA56702A9AB10100FE5080 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +74,7 @@
 				E3484A1D2A979065007E6144 /* SceneDelegate.swift */,
 				E3274F2E2A98EF710096C5FF /* MainCollectionVC.swift */,
 				E3274F302A98FD3D0096C5FF /* CollectionViewCell.swift */,
-				E384D9592A997C8F00807222 /* InfoVC.swift */,
+				E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */,
 				E3FA56702A9AB10100FE5080 /* TableViewCell.swift */,
 				E384D9572A99604600807222 /* NetworkManager.swift */,
 				E3484A2F2A97935C007E6144 /* LossesEquipment.swift */,
@@ -163,7 +163,7 @@
 				E3484A322A97972D007E6144 /* LossesEquipmentOryx.swift in Sources */,
 				E3484A1C2A979065007E6144 /* AppDelegate.swift in Sources */,
 				E3274F312A98FD3D0096C5FF /* CollectionViewCell.swift in Sources */,
-				E384D95A2A997C8F00807222 /* InfoVC.swift in Sources */,
+				E384D95A2A997C8F00807222 /* LossesEqInfoVC.swift in Sources */,
 				E3FA56712A9AB10100FE5080 /* TableViewCell.swift in Sources */,
 				E384D9582A99604600807222 /* NetworkManager.swift in Sources */,
 				E3484A302A97935C007E6144 /* LossesEquipment.swift in Sources */,
