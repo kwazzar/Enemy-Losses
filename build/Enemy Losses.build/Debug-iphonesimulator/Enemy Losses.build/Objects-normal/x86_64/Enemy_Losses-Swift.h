@@ -360,6 +360,40 @@ SWIFT_CLASS("_TtC12Enemy_Losses14LossesEqTVCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12Enemy_Losses16LossesPersInfoVC")
+@interface LossesPersInfoVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface LossesPersInfoVC (SWIFT_EXTENSION(Enemy_Losses)) <UITableViewDelegate>
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface LossesPersInfoVC (SWIFT_EXTENSION(Enemy_Losses)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC12Enemy_Losses16LossesPersTVCell")
+@interface LossesPersTVCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified date;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified day;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified personnal;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified personalInfo;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pow;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UICollectionView;
 @class UICollectionViewLayout;
 

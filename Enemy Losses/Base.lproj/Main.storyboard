@@ -73,6 +73,7 @@
                     <connections>
                         <segue destination="BCb-4w-YO9" kind="show" identifier="LossesEquipment" id="hJY-qE-byr"/>
                         <segue destination="g9L-zD-5xa" kind="show" identifier="LossesEquipmentOryx" id="Eqc-4O-UEE"/>
+                        <segue destination="xfv-uf-skD" kind="show" identifier="LossesPersonal" id="Asm-tq-2F4"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K08-ot-1P7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -369,10 +370,10 @@
             </objects>
             <point key="canvasLocation" x="2808" y="-630"/>
         </scene>
-        <!--View Controller-->
+        <!--Losses Pers InfoVC-->
         <scene sceneID="w0r-KF-SXt">
             <objects>
-                <viewController id="xfv-uf-skD" sceneMemberID="viewController">
+                <viewController id="xfv-uf-skD" customClass="LossesPersInfoVC" customModule="Enemy_Losses" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yoX-tn-zz3">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,7 +382,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell3" rowHeight="191" id="DGU-K1-7td">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell3" rowHeight="191" id="DGU-K1-7td" customClass="LossesPersTVCell" customModule="Enemy_Losses" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="191"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DGU-K1-7td" id="TGM-ds-hmY">
@@ -391,7 +392,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zs9-qe-db5">
                                                     <rect key="frame" x="53.333333333333343" y="0.0" width="283.33333333333326" height="133.66666666666666"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-19-138">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-19-138">
                                                             <rect key="frame" x="0.0" y="0.0" width="283.33333333333331" height="20.333333333333332"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ce1-19-138" secondAttribute="height" multiplier="195:14" id="dUp-Jm-L0E"/>
@@ -400,7 +401,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-am-AEl">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-am-AEl">
                                                             <rect key="frame" x="0.0" y="28.333333333333336" width="283.33333333333331" height="20.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ALZ-am-AEl" secondAttribute="height" multiplier="195:14" id="Ffa-b3-gIO"/>
@@ -409,7 +410,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukd-4B-aiZ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personnal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukd-4B-aiZ">
                                                             <rect key="frame" x="0.0" y="56.666666666666664" width="283.33333333333331" height="20.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="Ukd-4B-aiZ" secondAttribute="height" multiplier="195:14" id="A29-H9-mZE"/>
@@ -418,7 +419,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLR-dw-WWO">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PersonnalInfo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLR-dw-WWO">
                                                             <rect key="frame" x="0.0" y="85" width="283.33333333333331" height="20.333333333333329"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="DLR-dw-WWO" secondAttribute="height" multiplier="195:14" id="hd1-1n-JT2"/>
@@ -427,7 +428,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wN-Aq-ChL">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wN-Aq-ChL">
                                                             <rect key="frame" x="0.0" y="113.33333333333333" width="283.33333333333331" height="20.333333333333329"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="2wN-Aq-ChL" secondAttribute="height" multiplier="195:14" id="W2a-9S-7Vo"/>
@@ -453,8 +454,19 @@
                                                 <constraint firstItem="Zs9-qe-db5" firstAttribute="top" secondItem="TGM-ds-hmY" secondAttribute="top" id="a6Y-fI-Lhv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="date" destination="ce1-19-138" id="T0c-bc-wlg"/>
+                                            <outlet property="day" destination="ALZ-am-AEl" id="ZEI-AK-7Bn"/>
+                                            <outlet property="personalInfo" destination="DLR-dw-WWO" id="9yz-76-QOp"/>
+                                            <outlet property="personnal" destination="Ukd-4B-aiZ" id="D3e-nv-NWM"/>
+                                            <outlet property="pow" destination="2wN-Aq-ChL" id="B9Z-th-CZt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xfv-uf-skD" id="ntY-bE-e76"/>
+                                    <outlet property="delegate" destination="xfv-uf-skD" id="fhc-LQ-NB8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MPj-ea-x9q"/>
@@ -469,6 +481,9 @@
                     <navigationItem key="navigationItem" id="DQQ-t1-9Rg">
                         <barButtonItem key="backBarButtonItem" title="Menu" id="tzr-4u-Sk7"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Egx-yq-RSC" id="59t-2Z-Lkc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYu-Bi-JLw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -49,7 +49,7 @@ class MainCollectionVC: UICollectionViewController {
         case .LossesEquipmentOryx:
             performSegue(withIdentifier: "LossesEquipmentOryx", sender: self)
         case.LossesPersonal:
-            print("LossesPersonal")
+            performSegue(withIdentifier: "LossesPersonal", sender: self)
         }
         
         

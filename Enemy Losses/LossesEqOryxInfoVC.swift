@@ -36,11 +36,11 @@ class LossesEqOryxInfoVC: UIViewController {
     private func configureCell(cell: LossesEqOryxTVCell, for indexPath: IndexPath) {
         
         let info = infosLEOryx[indexPath.row]
-        cell.equipmentOryx.text = "Equipment Oryx \(info.equirmentOryx)"
-        cell.model.text = "Model \(info.model)"
-        cell.manufacturer.text = "Manufacturer \(info.manufacturer)"
-        cell.lossesTotal.text = "lossesTotal \(info.lossesTotal)"
-        cell.equipmentUa.text = "Equipment Ua \(info.equipmentUa)"
+        cell.equipmentOryx.text = "Equipment Oryx : \(info.equirmentOryx)"
+        cell.model.text = "Model : \(info.model)"
+        cell.manufacturer.text = "Manufacturer : \(info.manufacturer)"
+        cell.lossesTotal.text = "lossesTotal : \(info.lossesTotal)"
+        cell.equipmentUa.text = "Equipment Ua : \(info.equipmentUa)"
         
         
     }
@@ -55,6 +55,7 @@ class LossesEqOryxInfoVC: UIViewController {
     */
 
 }
+
 // MARK: Table View Data Source
 extension LossesEqOryxInfoVC: UITableViewDataSource {
     
@@ -77,7 +78,7 @@ extension LossesEqOryxInfoVC: UITableViewDataSource {
 extension LossesEqOryxInfoVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 180
         
     }
 }

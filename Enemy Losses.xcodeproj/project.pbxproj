@@ -21,6 +21,8 @@
 		E37010CE2A9C230E00233F14 /* LossesEqOryxTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37010CD2A9C230E00233F14 /* LossesEqOryxTVCell.swift */; };
 		E384D9582A99604600807222 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384D9572A99604600807222 /* NetworkManager.swift */; };
 		E384D95A2A997C8F00807222 /* LossesEqInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */; };
+		E38A2D572A9C4B290003A9EA /* LossesPersInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A2D562A9C4B290003A9EA /* LossesPersInfoVC.swift */; };
+		E38A2D592A9C4B520003A9EA /* LossesPersTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A2D582A9C4B520003A9EA /* LossesPersTVCell.swift */; };
 		E3FA56712A9AB10100FE5080 /* LossesEqTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FA56702A9AB10100FE5080 /* LossesEqTVCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		E37010CD2A9C230E00233F14 /* LossesEqOryxTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesEqOryxTVCell.swift; sourceTree = "<group>"; };
 		E384D9572A99604600807222 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesEqInfoVC.swift; sourceTree = "<group>"; };
+		E38A2D562A9C4B290003A9EA /* LossesPersInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesPersInfoVC.swift; sourceTree = "<group>"; };
+		E38A2D582A9C4B520003A9EA /* LossesPersTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesPersTVCell.swift; sourceTree = "<group>"; };
 		E3FA56702A9AB10100FE5080 /* LossesEqTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesEqTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,8 @@
 				E3FA56702A9AB10100FE5080 /* LossesEqTVCell.swift */,
 				E37010CB2A9C227F00233F14 /* LossesEqOryxInfoVC.swift */,
 				E37010CD2A9C230E00233F14 /* LossesEqOryxTVCell.swift */,
+				E38A2D562A9C4B290003A9EA /* LossesPersInfoVC.swift */,
+				E38A2D582A9C4B520003A9EA /* LossesPersTVCell.swift */,
 				E384D9572A99604600807222 /* NetworkManager.swift */,
 				E3484A2F2A97935C007E6144 /* LossesEquipment.swift */,
 				E3484A312A97972D007E6144 /* LossesEquipmentOryx.swift */,
@@ -170,6 +176,8 @@
 				E37010CE2A9C230E00233F14 /* LossesEqOryxTVCell.swift in Sources */,
 				E3484A1C2A979065007E6144 /* AppDelegate.swift in Sources */,
 				E37010CC2A9C227F00233F14 /* LossesEqOryxInfoVC.swift in Sources */,
+				E38A2D572A9C4B290003A9EA /* LossesPersInfoVC.swift in Sources */,
+				E38A2D592A9C4B520003A9EA /* LossesPersTVCell.swift in Sources */,
 				E3274F312A98FD3D0096C5FF /* CollectionViewCell.swift in Sources */,
 				E384D95A2A997C8F00807222 /* LossesEqInfoVC.swift in Sources */,
 				E3FA56712A9AB10100FE5080 /* LossesEqTVCell.swift in Sources */,
