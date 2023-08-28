@@ -1,0 +1,20 @@
+"/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesPersTVCell.swift":
+  object: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersTVCell.o"
+  dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersTVCell.d"
+  swift-dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersTVCell.swiftdeps"
+  diagnostics: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersTVCell.dia"
+"/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesEqOryxInfoVC.swift":
+  swift-dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesEqOryxInfoVC.swiftdeps"
+  diagnostics: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesEqOryxInfoVC.dia"
+  object: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesEqOryxInfoVC.o"
+  dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesEqOryxInfoVC.d"
+"/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/CollectionViewCell.swift":
+  diagnostics: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/CollectionViewCell.dia"
+  swift-dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/CollectionViewCell.swiftdeps"
+  object: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/CollectionViewCell.o"
+  dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/CollectionViewCell.d"
+"/Users/kwazar/Swift/Bootcamp/Enemy Losses/Enemy Losses/LossesPersInfoVC.swift":
+  object: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersInfoVC.o"
+  dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersInfoVC.d"
+  swift-dependencies: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersInfoVC.swiftdeps"
+  diagnostics: "/Users/kwazar/Swift/Bootcamp/Enemy Losses/build/Enemy Losses.build/Debug-iphonesimulator/Enemy Losses.build/Objects-normal/x86_64/LossesPersInfoVC.dia"

@@ -78,26 +78,74 @@
 		E3484A1A2A979065007E6144 /* Enemy Losses */ = {
 			isa = PBXGroup;
 			children = (
-				E3484A1B2A979065007E6144 /* AppDelegate.swift */,
-				E3484A1D2A979065007E6144 /* SceneDelegate.swift */,
-				E3274F2E2A98EF710096C5FF /* MainCollectionVC.swift */,
-				E3274F302A98FD3D0096C5FF /* CollectionViewCell.swift */,
-				E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */,
-				E3FA56702A9AB10100FE5080 /* LossesEqTVCell.swift */,
-				E37010CB2A9C227F00233F14 /* LossesEqOryxInfoVC.swift */,
-				E37010CD2A9C230E00233F14 /* LossesEqOryxTVCell.swift */,
-				E38A2D562A9C4B290003A9EA /* LossesPersInfoVC.swift */,
-				E38A2D582A9C4B520003A9EA /* LossesPersTVCell.swift */,
-				E384D9572A99604600807222 /* NetworkManager.swift */,
+				E38A2D5F2A9C57440003A9EA /* Flow */,
+				E38A2D5B2A9C55410003A9EA /* Network */,
+				E38A2D5A2A9C55060003A9EA /* Models */,
+				E38A2D5E2A9C566D0003A9EA /* Supporting files */,
+			);
+			path = "Enemy Losses";
+			sourceTree = "<group>";
+		};
+		E38A2D5A2A9C55060003A9EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				E3484A2F2A97935C007E6144 /* LossesEquipment.swift */,
 				E3484A312A97972D007E6144 /* LossesEquipmentOryx.swift */,
 				E3484A332A9798E1007E6144 /* LossesPersonal.swift */,
-				E3484A212A979065007E6144 /* Main.storyboard */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E38A2D5B2A9C55410003A9EA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E384D9572A99604600807222 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E38A2D5C2A9C55CA0003A9EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E3274F302A98FD3D0096C5FF /* CollectionViewCell.swift */,
+				E3FA56702A9AB10100FE5080 /* LossesEqTVCell.swift */,
+				E37010CD2A9C230E00233F14 /* LossesEqOryxTVCell.swift */,
+				E38A2D582A9C4B520003A9EA /* LossesPersTVCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E38A2D5D2A9C56130003A9EA /* View controlers */ = {
+			isa = PBXGroup;
+			children = (
+				E3274F2E2A98EF710096C5FF /* MainCollectionVC.swift */,
+				E384D9592A997C8F00807222 /* LossesEqInfoVC.swift */,
+				E37010CB2A9C227F00233F14 /* LossesEqOryxInfoVC.swift */,
+				E38A2D562A9C4B290003A9EA /* LossesPersInfoVC.swift */,
+			);
+			path = "View controlers";
+			sourceTree = "<group>";
+		};
+		E38A2D5E2A9C566D0003A9EA /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E3484A1B2A979065007E6144 /* AppDelegate.swift */,
+				E3484A1D2A979065007E6144 /* SceneDelegate.swift */,
 				E3484A242A979067007E6144 /* Assets.xcassets */,
-				E3484A262A979067007E6144 /* LaunchScreen.storyboard */,
 				E3484A292A979067007E6144 /* Info.plist */,
 			);
-			path = "Enemy Losses";
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E38A2D5F2A9C57440003A9EA /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				E38A2D5D2A9C56130003A9EA /* View controlers */,
+				E38A2D5C2A9C55CA0003A9EA /* Cells */,
+				E3484A212A979065007E6144 /* Main.storyboard */,
+				E3484A262A979067007E6144 /* LaunchScreen.storyboard */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XK3NFM9Y7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Enemy Losses/Info.plist";
+				INFOPLIST_FILE = "Enemy Losses/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -361,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XK3NFM9Y7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Enemy Losses/Info.plist";
+				INFOPLIST_FILE = "Enemy Losses/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "dataset_2022_war_ukraine_russia.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "dataset_2022_war_ukraine_russia.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
