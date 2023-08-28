@@ -15,16 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dataset_2022_war_ukraine_russia" translatesAutoresizingMaskIntoConstraints="NO" id="Nqi-Bw-vMt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nqi-Bw-vMt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CRk-fP-DxY"/>
+                            <constraint firstItem="Nqi-Bw-vMt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bFa-4v-HIb"/>
+                            <constraint firstItem="Nqi-Bw-vMt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q5u-8I-Hfz"/>
+                            <constraint firstAttribute="bottom" secondItem="Nqi-Bw-vMt" secondAttribute="bottom" id="qW2-A5-PHX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="40"/>
+            <point key="canvasLocation" x="316.79389312977099" y="39.436619718309863"/>
         </scene>
     </scenes>
     <resources>
+        <image name="dataset_2022_war_ukraine_russia" width="600" height="230"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

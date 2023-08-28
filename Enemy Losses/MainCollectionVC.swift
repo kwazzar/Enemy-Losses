@@ -26,7 +26,6 @@ class MainCollectionVC: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return actions.count
     }
 
@@ -48,7 +47,7 @@ class MainCollectionVC: UICollectionViewController {
         case .LossesEquipment:
             performSegue(withIdentifier: "LossesEquipment", sender: self)
         case .LossesEquipmentOryx:
-            print("LossesEquipmentOryx")
+            performSegue(withIdentifier: "LossesEquipmentOryx", sender: self)
         case.LossesPersonal:
             print("LossesPersonal")
         }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class LossesEqTVCell: UITableViewCell {
 
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var day: UILabel!

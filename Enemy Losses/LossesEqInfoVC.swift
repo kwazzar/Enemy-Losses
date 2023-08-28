@@ -9,7 +9,7 @@ import UIKit
 
 class LossesEqInfoVC: UIViewController {
     
-    private var infos = [LossesEquipment]()
+    private var infosLE = [LossesEquipment]()
     private var url = "https://raw.githubusercontent.com/MacPaw/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment.json"
 
     @IBOutlet weak var tableView: UITableView!
@@ -22,16 +22,16 @@ class LossesEqInfoVC: UIViewController {
     
     func fetchData() {
         NetworkManager.fetchData(url: url) { (infos) in
-        self.infos = infos
+        self.infosLE = infos
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
     }
     
-        private func configureCell(cell: TableViewCell, for indexPath: IndexPath) {
+        private func configureCell(cell: LossesEqTVCell, for indexPath: IndexPath) {
 
-            let info = infos[indexPath.row]
+            let info = infosLE[indexPath.row]
             cell.date.text = "Date \(info.date)"
            
             cell.day.text = "Day \(String(info.day))"
@@ -48,7 +48,7 @@ class LossesEqInfoVC: UIViewController {
             cell.antiAircraftWarfare.text = "Anti-Aircraft Warfare \(String(info.antiAircraftWarfare))"
             cell.specialEquipment.text = info.specialEquipment != nil ? "Special Equipment \(String(info.specialEquipment!))" : ""
             cell.mobileSRBMSystem.text = info.mobileSRBMSystem != nil ? "Mobile SRBM System \(String(info.mobileSRBMSystem!))" : ""
-            cell.greatestLossesDirection.text = info.greatestLossesDirection != nil ? "greatest Losses Direction \(info.mobileSRBMSystem!)" : ""
+            cell.greatestLossesDirection.text = info.greatestLossesDirection != nil ? "greatest Losses Direction \(info.greatestLossesDirection!)" : ""
             cell.vehiclesAndFuelTanks.text = info.vehiclesAndFuelTanks != nil ? "Vehicles and Fuel Tanks \(String(info.vehiclesAndFuelTanks!))" : ""
             cell.cruiseMisslies.text = info.cruiseMissiles != nil ? "Cruise Missiles \(String(info.cruiseMissiles!))" : ""
         }
@@ -64,12 +64,12 @@ class LossesEqInfoVC: UIViewController {
 extension LossesEqInfoVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return infos.count
+        return infosLE.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! LossesEqTVCell
     
         configureCell(cell: cell, for: indexPath)
         
@@ -84,7 +84,7 @@ extension LossesEqInfoVC: UITableViewDataSource {
 extension LossesEqInfoVC: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 350
+        return 370
 
     }
     

@@ -7,6 +7,8 @@
 
 import Foundation
 
+protocol DataType: Codable {
+}
 
 class NetworkManager {
     
@@ -31,9 +33,10 @@ class NetworkManager {
         }.resume()
     }
     
-    static func fetchData(url: String, completion: @escaping (_ array: [LossesEquipment])->()) {
+    static func fetchData<T: Codable>(url: String, completion: @escaping (_ array: [T])->()) {
         
         guard let url = URL(string: url) else { return }
+        
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             
@@ -43,7 +46,7 @@ class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let array = try decoder.decode([LossesEquipment].self, from: data)
+                let array = try decoder.decode([T].self, from: data)
                 completion(array)
 
             } catch let error {

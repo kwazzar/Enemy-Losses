@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct LossesEquipment: Codable {
+struct LossesEquipment: DataType {
     
     let date: String
     let day: Int
