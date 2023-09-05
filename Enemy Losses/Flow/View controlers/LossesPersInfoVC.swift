@@ -20,7 +20,27 @@ class LossesPersInfoVC: UIViewController {
         super.viewDidLoad()
         
         fetchData()
+        
+        let datePicker = UIDatePicker()
+        // Set the date picker mode to date and time
+        
+        // Set the date picker mode to date and time
+             datePicker.datePickerMode = .date
+
+             // Add the date picker to the view
+             view.addSubview(datePicker)
+
+             // Add a target to the date picker to detect when the value changes
+             datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
     }
+    
+    @objc func datePickerValueChanged(_ sender: UIDatePicker) {
+            // Get the selected date from the date picker
+            let selectedDate = sender.date
+
+            // Do something with the selected date
+            print(selectedDate)
+        }
     
     func fetchData() {
         NetworkManager.fetchData(url: url) { (infos) in

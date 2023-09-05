@@ -8,6 +8,8 @@
 import Foundation
 
 protocol DataType: Codable {
+
+    init?(json: [String:Any])
 }
 
 class NetworkManager {

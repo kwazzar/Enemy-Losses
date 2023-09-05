@@ -11,8 +11,13 @@ class LossesEqInfoVC: UIViewController {
     
     private var infosLE = [LossesEquipment]()
     private var url = "https://raw.githubusercontent.com/MacPaw/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment.json"
+    
+    
+    
 
     @IBOutlet weak var tableView: UITableView!
+    
+    
             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +33,9 @@ class LossesEqInfoVC: UIViewController {
             }
         }
     }
+    
+
+    
     
         private func configureCell(cell: LossesEqTVCell, for indexPath: IndexPath) {
 

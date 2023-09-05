@@ -12,6 +12,10 @@ class LossesEqOryxInfoVC: UIViewController {
     private var infosLEOryx = [LossesEquipmentOryx]()
     private var url = "https://raw.githubusercontent.com/MacPaw/2022-Ukraine-Russia-War-Dataset/main/data/russia_losses_equipment_oryx.json"
     
+ 
+    
+    
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +24,11 @@ class LossesEqOryxInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        
         fetchData()
+
 
     }
     

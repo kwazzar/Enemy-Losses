@@ -618,7 +618,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dataset_2022_war_ukraine_russia" width="600" height="230"/>
+        <image name="dataset_2022_war_ukraine_russia" width="1200" height="460"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

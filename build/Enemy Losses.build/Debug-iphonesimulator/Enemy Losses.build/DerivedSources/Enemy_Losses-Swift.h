@@ -362,11 +362,13 @@ SWIFT_CLASS("_TtC12Enemy_Losses14LossesEqTVCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIDatePicker;
 
 SWIFT_CLASS("_TtC12Enemy_Losses16LossesPersInfoVC")
 @interface LossesPersInfoVC : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (void)datePickerValueChanged:(UIDatePicker * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
